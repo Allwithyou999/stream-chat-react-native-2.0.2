@@ -14,14 +14,12 @@ const giphyLogo: ImageRequireSource = require('../../assets/Poweredby_100px-Whit
 
 const Container = styled.TouchableOpacity<{ alignment: Alignment }>`
   background-color: ${({ theme }) => theme.colors.light};
-  border-bottom-left-radius: ${({ alignment }) =>
-    alignment === 'right' ? 16 : 2}px;
-  border-bottom-right-radius: ${({ alignment }) =>
-    alignment === 'left' ? 16 : 2}px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   overflow: hidden;
-  width: 250px;
+  width: 100%;
   ${({ theme }) => theme.message.card.container.css}
 `;
 
